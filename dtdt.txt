@@ -1,0 +1,42 @@
+import pandas as pd
+
+# Sample data for demonstration
+data = {
+    'Scientific Question': [
+        'What is the largest planet in our solar system?',
+        'Which planet is known as the Red Planet?',
+        'What is the chemical symbol for the element Gold?'
+    ],
+    'A': [
+        'Mercury - It is the closest planet to the Sun, but not the largest.',
+        'Venus - Venus is not the largest planet and not known as the Red Planet.',
+        'Au - This is the correct chemical symbol for Gold.'
+    ],
+    'B': [
+        'Mars - Mars is not the largest planet, but it is known as the Red Planet.',
+        'Mars - Mars is known as the Red Planet.',
+        'Ag - Ag is the chemical symbol for Silver, not Gold.'
+    ],
+    'C': [
+        'Jupiter - This is the correct answer. Jupiter is the largest planet in our solar system.',
+        'Earth - Earth is not the largest planet and not known as the Red Planet.',
+        'Go - This is not the correct chemical symbol for Gold.'
+    ],
+    'D': [
+        'Saturn - Saturn is not the largest planet and not known as the Red Planet.',
+        'Jupiter - Jupiter is not known as the Red Planet.',
+        'Ge - Ge is the chemical symbol for Germanium, not Gold.'
+    ],
+    'E': [
+        'Uranus - Uranus is not the largest planet and not known as the Red Planet.',
+        'Neptune - Neptune is not known as the Red Planet.',
+        'Gd - Gd is the chemical symbol for Gadolinium, not Gold.'
+    ],
+    'Correct Answer': ['C', 'B', 'A']
+}
+
+# Create the DataFrame
+df = pd.DataFrame(data)
+
+# Display the DataFrame
+print(df)
